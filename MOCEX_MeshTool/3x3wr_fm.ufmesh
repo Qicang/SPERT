@@ -1,0 +1,31 @@
+! GRID_TYPE  <name> <X size>  <Y size>      ! Hexagonal/Cartesian  {X,Y sizes for Cartesian grid}
+!                                                                  {X=Rings for Hexagonal where all rings are full}
+! GRID_PITCH        <X pitch> <Y pitch>     ! X,Y pitches for Cartesian grid
+!                                             X   Hex pitch for Hexagonal
+! ELEMENT_ORDER     <integer value>         ! 1,2,3,4,... to the order of the finite element mesh to build
+! ASSEMBLY_SIZES    <duct boundary 1> <duct boundary 2> ... <duct boundary N> <assembly pitch>
+! ASSEMBLY_REGIONS  <duct name     1> <duct name     2> ... <duct boundary N>
+! ASSEMBLY_MESHES   <meshes        1> <meshes        2>
+! PINCELL_RADII     <Name id> <radius      1> <radius      2> ... <radius      R> 
+! PINCELL_REGIONS   <Name id> <region name 1> <region name 2> ... <region name R> <moderator>
+! PINCELL_MESHES    <Name id> <meshes      1> <meshes      2> ... <meshes      R> <moderator meshes>
+! PINCELL_AZIMUTHAL   <Integer value>         ! a=1,2,3, where there will be (2a+1|a+1) vertices on each side of a (square|hex) pin cell
+! GRID_MAP          <Y Row> <name X=1> <name X=2> ... <name X=X size>
+
+GRID_TYPE CARTESIAN  3 3  ! Must be the first line
+GRID_PITCH   1.26  1.26
+ELEMENT_ORDER 1
+ASSEMBLY_SIZES 3.78   ! This states that there will be no ducts around this assembly (3*1.26 = 3.78)
+PINCELL_RADII   A1   0.4096 0.418 0.475 0.59125
+PINCELL_REGIONS A1   fuel gap clad moderator moderator     ! UO2  Moderato
+PINCELL_MESHES A1 3 1 1 1 1
+PINCELL_AZIMUTHAL 2
+PINCELL_RADII   A2   0.561 0.602 
+PINCELL_REGIONS A2   gt_moderator gt_clad moderator   ! UO2  Moderato
+PINCELL_MESHES A2 3 1 1 
+PINCELL_AZIMUTHAL 2
+
+! Note that this is the letter O, not a zero
+GRID_MAP 3    A1 A1 A1
+GRID_MAP 2    A1 A2 A1
+GRID_MAP 1    A1 A1 A1 
