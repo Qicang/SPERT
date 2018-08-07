@@ -1,0 +1,100 @@
+! GRID_TYPE  <name> <X size>  <Y size>      ! Hexagonal/Cartesian  {X,Y sizes for Cartesian grid}
+!                                                                  {X=Rings for Hexagonal where all rings are full}
+! GRID_PITCH        <X pitch> <Y pitch>     ! X,Y pitches for Cartesian grid
+!                                             X   Hex pitch for Hexagonal
+! ELEMENT_ORDER     <integer value>         ! 1,2,3,4,... to the order of the finite element mesh to build
+! ASSEMBLY_SIZES    <duct boundary 1> <duct boundary 2> ... <duct boundary N> <assembly pitch>
+! ASSEMBLY_REGIONS  <duct name     1> <duct name     2> ... <duct boundary N>
+! ASSEMBLY_MESHES   <meshes        1> <meshes        2>
+! PINCELL_RADII     <Name id> <radius      1> <radius      2> ... <radius      R> 
+! PINCELL_REGIONS   <Name id> <region name 1> <region name 2> ... <region name R> <moderator>
+! PINCELL_MESHES    <Name id> <meshes      1> <meshes      2> ... <meshes      R> <moderator meshes>
+! PINCELL_AZIMUTHAL   <Integer value>         ! a=1,2,3, where there will be (2a+1|a+1) vertices on each side of a (square|hex) pin cell
+! GRID_MAP          <Y Row> <name X=1> <name X=2> ... <name X=X size>
+
+GRID_TYPE CARTESIAN  51  51  ! Must be the first line
+GRID_PITCH   1.26  1.26
+ELEMENT_ORDER 1
+ASSEMBLY_SIZES 64.26   ! This states that there will be no ducts around this assembly (51*1.26 = 64.26)
+PINCELL_RADII   A1   0.54 
+PINCELL_REGIONS A1  REGION_000000001   REGION_000000007     ! UO2 /  Moderato
+PINCELL_MESHES  A1     1      1
+PINCELL_RADII   A2   0.54 
+PINCELL_REGIONS A2  REGION_000000002   REGION_000000007     ! MOX8.7  Moderato
+PINCELL_MESHES  A2     1      1 
+PINCELL_RADII   A3   0.54 
+PINCELL_REGIONS A3  REGION_000000003   REGION_000000007     ! MOX7.0  Moderato
+PINCELL_MESHES  A3     1      1 
+PINCELL_RADII   A4   0.54 
+PINCELL_REGIONS A4  REGION_000000004   REGION_000000007     ! MOX4.3  Moderato
+PINCELL_MESHES  A4     1      1 
+PINCELL_RADII   A5   0.54 
+PINCELL_REGIONS A5  REGION_000000005   REGION_000000007     ! Guide Tube  Moderato
+PINCELL_MESHES  A5     1      1 
+PINCELL_RADII   A6   0.54 
+PINCELL_REGIONS A6  REGION_000000006   REGION_000000007     ! Fission Chamber  Moderato
+PINCELL_MESHES  A6     1      1 
+PINCELL_REGIONS A7  REGION_000000008           ! reflector /Moderato
+PINCELL_MESHES  A7     1
+PINCELL_AZIMUTHAL 1
+! GRID_MAP   5   O A1 A1 A1  O  ! Note that this is a O, not a 0, 
+! GRID_MAP   4  A1 A2 A2 A2 A1
+! GRID_MAP   3  A1 A2 A3 A2 A1
+! GRID_MAP   2  A1 A2 A2 A2 A1
+! GRID_MAP   1   O A1 A1 A1  NULL
+
+
+! Note that this is the letter O, not a zero
+GRID_MAP 51   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 50   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 49   A1  A1  A1  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A1  A1  A1  A4  A3  A3  A3  A3  A5  A3  A3  A5  A3  A3  A5  A3  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 48   A1  A1  A1  A5  A1  A1  A1  A1  A1  A1  A1  A1  A1  A5  A1  A1  A1  A4  A3  A3  A5  A3  A2  A2  A2  A2  A2  A2  A2  A3  A5  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 47   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 46   A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A4  A3  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 45   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 44   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 43   A1  A1  A5  A1  A1  A5  A1  A1  A6  A1  A1  A5  A1  A1  A5  A1  A1  A4  A3  A5  A2  A2  A5  A2  A2  A6  A2  A2  A5  A2  A2  A5  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 42   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 41   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 40   A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A4  A3  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 39   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 38   A1  A1  A1  A5  A1  A1  A1  A1  A1  A1  A1  A1  A1  A5  A1  A1  A1  A4  A3  A3  A5  A3  A2  A2  A2  A2  A2  A2  A2  A3  A5  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  
+GRID_MAP 37   A1  A1  A1  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A1  A1  A1  A4  A3  A3  A3  A3  A5  A3  A3  A5  A3  A3  A5  A3  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 36   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 35   A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+                                                                                                                                                     
+GRID_MAP 34   A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 33   A4  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 32   A4  A3  A3  A3  A3  A5  A3  A3  A5  A3  A3  A5  A3  A3  A3  A3  A4  A1  A1  A1  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 31   A4  A3  A3  A5  A3  A2  A2  A2  A2  A2  A2  A2  A3  A5  A3  A3  A4  A1  A1  A1  A5  A1  A1  A1  A1  A1  A1  A1  A1  A1  A5  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 30   A4  A3  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 29   A4  A3  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A3  A4  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 28   A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 27   A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 26   A4  A3  A5  A2  A2  A5  A2  A2  A6  A2  A2  A5  A2  A2  A5  A3  A4  A1  A1  A5  A1  A1  A5  A1  A1  A6  A1  A1  A5  A1  A1  A5  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 25   A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 24   A4  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 23   A4  A3  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A2  A2  A5  A3  A4  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 22   A4  A3  A3  A3  A2  A2  A2  A2  A2  A2  A2  A2  A2  A3  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 21   A4  A3  A3  A5  A3  A2  A2  A2  A2  A2  A2  A2  A3  A5  A3  A3  A4  A1  A1  A1  A5  A1  A1  A1  A1  A1  A1  A1  A1  A1  A5  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 20   A4  A3  A3  A3  A3  A5  A3  A3  A5  A3  A3  A5  A3  A3  A3  A3  A4  A1  A1  A1  A1  A1  A5  A1  A1  A5  A1  A1  A5  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 19   A4  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A3  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 18   A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A4  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A1  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+                                                                                                                                                     
+GRID_MAP 17   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 16   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 15   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 14   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 13   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 12   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 11   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 10   A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 9    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 8    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 7    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 6    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 5    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 4    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 3    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 2    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7
+GRID_MAP 1    A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7  A7

@@ -1,0 +1,1474 @@
+[jshihang@highpoint 16rods]$ mpirun -np 16 ../../MOCEX.exe
+  Rank, Size=           4          16
+  Rank, Size=           6          16
+  Rank, Size=          15          16
+  Rank, Size=          13          16
+  Rank, Size=           3          16
+  Rank, Size=          12          16
+  Rank, Size=           5          16
+  Rank, Size=           7          16
+  Rank, Size=           2          16
+  Rank, Size=          11          16
+  Rank, Size=           0          16
+  Rank, Size=           1          16
+  Rank, Size=          14          16
+  Rank, Size=           9          16
+  Rank, Size=           8          16
+  Rank, Size=          10          16
+[Input_Read]...Check card format of keyword.....................................                                                                                                                ....TOLERANCE_EIGENVALUE
+[Input_Read]...TOLERANCE_EIGENVALUE     1.0e-0.5                                                                                                                                                
+[Input_Read]...Unknown key word.................................................                                                                                                                ....THERMAL_FLUX
+[Input_Read]...THERMAL_FLUX                     1.0e-0.5                                                                                                                                        
+[Input_Read]...Check card format of keyword.....................................                                                                                                                ....TOLERANCE_FISSION
+[Input_Read]...TOLERANCE_FISSION                1.0e-0.5                                                                                                                                        
+[ MOCEX ]...Successfully imported the MOCEX input (all errors reported above)...                                                                                                                ......................................
+  Rank, Size again=           0          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           1          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           4          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           5          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           2          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           3          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           6          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           7          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           8          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=           9          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          10          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          12          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          13          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          11          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          14          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+  Rank, Size again=          15          16
+  Input_MOCEX%USE_TH_FEEDBACK,Input_MOCEX%TH_FEEDBACK_METHOD  F NONE                                                                                                                            
+[ MOCEX ]...Successfully imported the ASSIGNMENT input (all errors reported abov                                                                                                                e)......................................
+[ MOCEX ]...Adjusting the tolerance on eigenvalue from ********* to default of 1                                                                                                                .000E-06................................
+[ MOCEX ]...Adjusting the tolerance on fission from ********* to default of 5.00                                                                                                                0E-06...................................
+[ MOCEX ]...The total number of processors available is ........................                                                                                                                ............................          16
+[ MOCEX ]...The       1505 - spatial vertices - are chopped into      1 processo                                                                                                                r communication segments................
+[ MOCEX ]...The         41 -  energy groups   - are chopped into      1 processo                                                                                                                r communication segments................
+[ MOCEX ]...The          8 - angular moments  - are chopped into      1 processo                                                                                                                r communication segments................
+[ MOCEX ]...The         48 -   axial planes   - are chopped into     16 processo                                                                                                                r communication segments................
+[PNTmesh]...Successfully read the decomposition into        1...................                                                                                                                ........................................
+[PNTmesh]...        1505 vertices split into      1 max         1505 min                                                                                                                         1505 RMS =        1505 AVG =       1505
+[PNTmesh]...        1664 elements split into      1 max         1664 min                                                                                                                         1664 RMS =        1664 AVG =       1664
+[ MOCEX ]...Neutron transport spatial mesh data was imported and the alias names                                                                                                                 were applied...........................
+[XSAPI]...Group     5...........................................................                                                                                                                ........................................
+[XSAPI]...Group     6...........................................................                                                                                                                ........................................
+[XSAPI]...Group     7...........................................................                                                                                                                ........................................
+[XSAPI]...Group     8...........................................................                                                                                                                ........................................
+[XSAPI]...Group     9...........................................................                                                                                                                ........................................
+[XSAPI]...Group    10...........................................................                                                                                                                ........................................
+[XSAPI]...Group    11...........................................................                                                                                                                ........................................
+[XSAPI]...Group    12...........................................................                                                                                                                ........................................
+[XSAPI]...Group    13...........................................................                                                                                                                ........................................
+[XSAPI]...Group    14...........................................................                                                                                                                ........................................
+[XSAPI]...Group    15...........................................................                                                                                                                ........................................
+[XSAPI]...Group    16...........................................................                                                                                                                ........................................
+[XSAPI]...Group    17...........................................................                                                                                                                ........................................
+[XSAPI]...Group    18...........................................................                                                                                                                ........................................
+[XSAPI]...Group    19...........................................................                                                                                                                ........................................
+[XSAPI]...Group    20...........................................................                                                                                                                ........................................
+[XSAPI]...Group    21...........................................................                                                                                                                ........................................
+[XSAPI]...Group    22...........................................................                                                                                                                ........................................
+[XSAPI]...Group    23...........................................................                                                                                                                ........................................
+[XSAPI]...Group    24...........................................................                                                                                                                ........................................
+[ MOCEX ]...Print settings information..........................................                                                                                                                ........................................
+[ MOCEX ]...   Debug print setting for setup....................................                                                                                                                ........................               0
+[ MOCEX ]...   Debug print setting for iteration history........................                                                                                                                ........................               0
+[ MOCEX ]...XS Library information..............................................                                                                                                                ........................................
+[ MOCEX ]...   Global number of energy groups in the library....................                                                                                                                ........................              41
+[ MOCEX ]...   Number of legendre expansion moments of the scattering kernel....                                                                                                                ........................               3
+[ MOCEX ]...   Lowest group index that fission is emmitted to...................                                                                                                                ........................              41
+[ MOCEX ]...Axial planes information............................................                                                                                                                ........................................
+[ MOCEX ]...   Global number of axial planes in the geometry....................                                                                                                                ........................              48
+[ MOCEX ]...2D mesh information.................................................                                                                                                                ........................................
+[ MOCEX ]...   Global number of planar spatial elements.........................                                                                                                                ........................            1664
+[ MOCEX ]...   Global number of planar domain surfaces..........................                                                                                                                ........................              80
+[ MOCEX ]...Angular cubature information........................................                                                                                                                ........................................
+[ MOCEX ]...   Cubature used for angular domain.................................                                                                                                                ........................LEG-TCHEBY
+[ MOCEX ]...   Cubature order...................................................                                                                                                                ........................               2
+[ MOCEX ]...   Number of angular directions in the cubature.....................                                                                                                                ........................               8
+[ MOCEX ]...Ray tracing information.............................................                                                                                                                ........................................
+[ MOCEX ]...   Number of tracked directions per process.........................                                                                                                                ........................               2
+[ MOCEX ]...   Maximum trajectory area to assign................................                                                                                                                ........................     1.00000E-02
+[ MOCEX ]...   Equal area point distribution is used............................                                                                                                                ........................      Yes
+[ MOCEX ]...   Back projection scheme used......................................                                                                                                                ........................DOMAIN
+[ MOCEX ]...   Total number of visible trajectories.............................                                                                                                                ........................            8960
+[ MOCEX ]...   Total number of missed elements..................................                                                                                                                ........................               0
+[ MOCEX ]...   Total number of trajectory jumps                0 with an average                                                                                                                 distance of ...........     0.00000E+00
+[ MOCEX ]...   Number of round-off related trajectory segments removal..........                                                                                                                ........................               0
+[ MOCEX ]...   Number of ray-casting related trajectory removal.................                                                                                                                ........................               0
+[ MOCEX ]...   Average number of intersections per direction per element........                                                                                                                ........................     2.60998E+01
+[ MOCEX ]...   Maximum number of intersections per direction per element........                                                                                                                ........................              64
+[ MOCEX ]...   Total number of intersections....................................                                                                                                                ........................     8.68600E+04
+[ MOCEX ]...   Average intersection length .....................................                                                                                                                ... 1.389530765E-01 +/-  1.056722010E-01
+[ MOCEX ]...   Average trajectory area     .....................................                                                                                                                ... 9.621702987E-03 +/-  9.092327296E-10
+[ MOCEX ]...   Maximum trajectory area     .....................................                                                                                                                ... 9.621702987E-03
+[ MOCEX ]...   Average volume adjustment   .....................................                                                                                                                ... 1.000274125E+00 +/-  1.656988050E-02
+[ MOCEX ]...Source type information.............................................                                                                                                                ........................................
+[ MOCEX ]...   Is a fission source present......................................                                                                                                                ........................      Yes
+[ MOCEX ]...   Is a fixed source present........................................                                                                                                                ........................      No
+[ MOCEX ]...   Is upscattering present (thermal system).........................                                                                                                                ........................      Yes
+[ MOCEX ]...   Last down-scattering only group..................................                                                                                                                ........................               0
+[ MOCEX ]...Outer iteration control variables...................................                                                                                                                ........................................
+[ MOCEX ]...   Maximum inverse power iterations.................................                                                                                                                ........................             100
+[ MOCEX ]...   Tchebychev acceleration will be used.............................                                                                                                                ........................................
+[ MOCEX ]...   Targeted error on the eigenvalue.................................                                                                                                                ........................       1.000E-06
+[ MOCEX ]...   Targeted error on the fission source.............................                                                                                                                ........................       5.000E-06
+[ MOCEX ]...   Targeted error on the flux solution..............................                                                                                                                ........................       1.000E-07
+[ MOCEX ]...Inner iteration control variables...................................                                                                                                                ........................................
+[ MOCEX ]...   Number of backvectors............................................                                                                                                                ........................              50
+[ MOCEX ]...   Guessed iterations...............................................                                                                                                                ........................            1000
+[ MOCEX ]...   Guessed preconditioner iterations................................                                                                                                                ........................            1000
+[ MOCEX ]...   Guessed relative error...........................................                                                                                                                ........................       5.000E-02
+[ MOCEX ]...Memory usage statistics.............................................                                                                                                                ...| Local  |Average |  Max   |  Min   |
+[ MOCEX ]...  Axial mesh                                                                                                                                                                           | 60.0  b| 60.0  b| 60.0  b| 60.0  b|
+[ MOCEX ]...  2D PNTmesh                                                                                                                                                                           | 78.8 kb| 78.8 kb| 78.8 kb| 78.8 kb|
+[ MOCEX ]...  2D PNTmesh surfaces                                                                                                                                                                  | 40.0 kb| 40.0 kb| 40.0 kb| 40.0 kb|
+[ MOCEX ]...  Ray Tracing                                                                                                                                                                          |  1.1 Mb|  1.1 Mb|  1.1 Mb|  1.1 Mb|
+[ MOCEX ]...  Trajectory communication pattern                                                                                                                                                     | 24.0  b| 24.0  b| 24.0  b| 24.0  b|
+[ MOCEX ]...  BC matrices                                                                                                                                                                          |  2.4 kb|  1.9 kb|  2.4 kb|  1.8 kb|
+[ MOCEX ]...  XS storage                                                                                                                                                                           |  6.6 Mb|  6.6 Mb|  6.6 Mb|  6.6 Mb|
+[ MOCEX ]...  XS scratch storage                                                                                                                                                                   | 79.9 kb| 79.9 kb| 79.9 kb| 79.9 kb|
+[ MOCEX ]...  Element to composition mapping                                                                                                                                                       |  6.7 kb|  6.7 kb|  6.7 kb|  6.7 kb|
+[ MOCEX ]...  Spherical harmonics                                                                                                                                                                  |  1.7 kb|  1.7 kb|  1.7 kb|  1.7 kb|
+[ MOCEX ]...  Cubature map                                                                                                                                                                         | 88.0  b| 88.0  b| 88.0  b| 88.0  b|
+[ MOCEX ]...  Krylov method storage (includes solution vector)                                                                                                                                     | 96.5 Mb| 96.5 Mb| 96.5 Mb| 96.5 Mb|
+[ MOCEX ]...  PN Flux vector                                                                                                                                                                       | 90.6 Mb| 90.6 Mb| 90.6 Mb| 90.6 Mb|
+[ MOCEX ]...  Fixed source                                                                                                                                                                         |  0.0  b|  0.0  b|  0.0  b|  0.0  b|
+[ MOCEX ]...  Fission source                                                                                                                                                                       | 13.1 Mb| 13.1 Mb| 13.1 Mb| 13.1 Mb|
+[ MOCEX ]...  Scattering source                                                                                                                                                                    |639.0 kb|639.0 kb|639.0 kb|639.0 kb|
+[ MOCEX ]...  Multi-group source                                                                                                                                                                   |669.7 kb|669.7 kb|669.7 kb|669.7 kb|
+[ MOCEX ]...  Modified source                                                                                                                                                                      |159.8 kb|159.8 kb|159.8 kb|159.8 kb|
+[ MOCEX ]...  Surface outgoing flux                                                                                                                                                                |106.5 kb|106.5 kb|106.5 kb|106.5 kb|
+[ MOCEX ]...  Multi-group right-hand side vector                                                                                                                                                   |669.7 kb|669.7 kb|669.7 kb|669.7 kb|
+[ MOCEX ]...  Vector dimensions                                                                                                                                                                    |240.0  b|240.0  b|240.0  b|240.0  b|
+[ MOCEX ]...  Power method controls                                                                                                                                                                |176.0 kb|176.0 kb|176.0 kb|176.0 kb|
+[ MOCEX ]...  Geometrical data                                                                                                                                                                     | 13.5 kb| 13.5 kb| 13.5 kb| 13.5 kb|
+[ MOCEX ]...                                                                                                                                                                                       |========|========|========|========|
+[ MOCEX ]...  TOTAL                                                                                                                                                                                |210.5 Mb|210.5 Mb|210.5 Mb|210.5 Mb|
+= MOCEX =....................................BEGINNING OF EIGENVALUE SOLVE......                                                                                                                ........................................
+= MOCEX =...|             Fission Source Iteration                      |    Wit                                                                                                                hin-group Source Iteration   |..........
+= MOCEX =...| Seconds|Itr| Eigenvalue | Error  |Fiss Err|Flux Err| Dom  |  Error                                                                                                                  Grp|  K  |Max   G |Min   G |..........
+= MOCEX =...|    11.4|001| 1.01360E+00| 1.4E-02| 1.2E-01| 3.4E-01| 0.000|3.4E-01                                                                                                                   41|  191|  7    2|  3   23|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|002| 1.02128E+00| 7.6E-03| 7.0E-02| 1.7E-02| 0.000|1.7E-02                                                                                                                   41|  204|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.2|003| 1.02122E+00| 6.1E-05| 4.6E-02| 4.1E-03| 0.041|4.1E-03                                                                                                                   40|  201|  8    1|  4   13|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|004| 1.01831E+00| 2.9E-03| 3.6E-02| 2.2E-03| 0.047|2.2E-03                                                                                                                    3|  199|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|005| 1.01593E+00| 2.3E-03| 2.9E-02| 1.8E-03| 0.276|1.8E-03                                                                                                                    2|  197|  8    1|  4   13|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    13.4|006| 1.01466E+00| 1.2E-03| 2.4E-02| 1.4E-03| 0.656|1.4E-03                                                                                                                    2|  198|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|007| 1.01428E+00| 3.7E-04| 2.0E-02| 1.1E-03| 0.743|1.1E-03                                                                                                                    2|  198|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|008| 1.01447E+00| 1.8E-04| 1.7E-02| 9.5E-04| 0.778|9.5E-04                                                                                                                    4|  197|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|009| 1.01496E+00| 4.8E-04| 1.5E-02| 7.2E-04| 0.810|7.2E-04                                                                                                                    4|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|010| 1.01558E+00| 6.2E-04| 1.3E-02| 5.9E-04| 0.815|5.9E-04                                                                                                                    4|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|011| 1.01624E+00| 6.5E-04| 1.1E-02| 5.0E-04| 0.836|5.0E-04                                                                                                                    4|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|012| 1.01686E+00| 6.2E-04| 9.4E-03| 4.3E-04| 0.846|4.3E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|013| 1.01743E+00| 5.6E-04| 8.1E-03| 3.7E-04| 0.852|3.7E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|014| 1.01793E+00| 4.9E-04| 7.0E-03| 3.2E-04| 0.857|3.2E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|015| 1.01835E+00| 4.2E-04| 6.0E-03| 2.7E-04| 0.859|2.7E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|016| 1.01870E+00| 3.5E-04| 5.2E-03| 2.4E-04| 0.861|2.4E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|017| 1.01900E+00| 2.9E-04| 4.5E-03| 2.1E-04| 0.862|2.1E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|018| 1.01924E+00| 2.4E-04| 3.9E-03| 1.8E-04| 0.863|1.8E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|019| 1.01943E+00| 1.9E-04| 3.4E-03| 1.5E-04| 0.864|1.5E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|020| 1.01959E+00| 1.5E-04| 2.9E-03| 1.3E-04| 0.865|1.3E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|021| 1.01971E+00| 1.2E-04| 2.5E-03| 1.2E-04| 0.865|1.2E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|022| 1.01981E+00| 9.7E-05| 2.2E-03| 1.0E-04| 0.865|1.0E-04                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|023| 1.01989E+00| 7.7E-05| 1.9E-03| 8.7E-05| 0.865|8.7E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.4|024| 1.01995E+00| 6.0E-05| 1.6E-03| 7.5E-05| 0.866|7.5E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|025| 1.02000E+00| 4.7E-05| 1.4E-03| 6.5E-05| 0.866|6.5E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|026| 1.02004E+00| 3.7E-05| 1.2E-03| 5.6E-05| 0.866|5.6E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.4|027| 1.02007E+00| 2.8E-05| 1.1E-03| 4.9E-05| 0.866|4.9E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.8|028| 1.02009E+00| 2.2E-05| 9.2E-04| 4.2E-05| 0.866|4.2E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|029| 1.02010E+00| 1.7E-05| 8.0E-04| 3.7E-05| 0.866|3.7E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    13.2|030| 1.02012E+00| 1.3E-05| 6.9E-04| 3.2E-05| 0.866|3.2E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.2|031| 1.02013E+00| 9.9E-06| 6.0E-04| 2.8E-05| 0.866|2.8E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|032| 1.02014E+00| 7.6E-06| 5.2E-04| 2.4E-05| 0.866|2.4E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|033| 1.02014E+00| 5.7E-06| 4.5E-04| 2.1E-05| 0.866|2.1E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    13.0|034| 1.02015E+00| 4.3E-06| 3.9E-04| 1.8E-05| 0.866|1.8E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|035| 1.02015E+00| 3.2E-06| 3.4E-04| 1.6E-05| 0.867|1.6E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.1|036| 1.02015E+00| 2.4E-06| 2.9E-04| 1.3E-05| 0.867|1.3E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|037| 1.02015E+00| 1.8E-06| 2.5E-04| 1.2E-05| 0.867|1.2E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.9|038| 1.02016E+00| 1.3E-06| 2.2E-04| 1.0E-05| 0.867|1.0E-05                                                                                                                   33|  196|  8    1|  4   19|..........
+= MOCEX =...|    12.2|039| 1.02016E+00| 9.6E-07| 1.9E-04| 8.7E-06| 0.867|8.7E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.6|040| 1.02016E+00| 6.9E-07| 1.7E-04| 7.6E-06| 0.867|7.6E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|041| 1.02016E+00| 4.9E-07| 1.4E-04| 6.6E-06| 0.867|6.6E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|042| 1.02016E+00| 3.4E-07| 1.2E-04| 5.7E-06| 0.867|5.7E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.8|043| 1.02016E+00| 2.3E-07| 1.1E-04| 4.9E-06| 0.867|4.9E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.0|044| 1.02016E+00| 1.5E-07| 9.3E-05| 4.3E-06| 0.867|4.3E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.1|045| 1.02016E+00| 9.0E-08| 8.1E-05| 3.7E-06| 0.867|3.7E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|046| 1.02016E+00| 4.8E-08| 7.0E-05| 3.2E-06| 0.867|3.2E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|047| 1.02016E+00| 1.9E-08| 6.1E-05| 2.8E-06| 0.867|2.8E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+= MOCEX =...|    11.8|048| 1.02016E+00| 9.3E-10| 5.3E-05| 2.4E-06| 0.867|2.4E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.1|049| 1.02016E+00| 1.4E-08| 4.6E-05| 2.1E-06| 0.867|2.1E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|050| 1.02016E+00| 2.2E-08| 4.0E-05| 1.8E-06| 0.867|1.8E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|051| 1.02016E+00| 2.7E-08| 3.4E-05| 1.6E-06| 0.867|1.6E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|052| 1.02016E+00| 3.0E-08| 3.0E-05| 1.4E-06| 0.867|1.4E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|053| 1.02016E+00| 3.0E-08| 2.6E-05| 1.2E-06| 0.867|1.2E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|054| 1.02016E+00| 3.0E-08| 2.2E-05| 1.0E-06| 0.867|1.0E-06                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|055| 1.02016E+00| 2.8E-08| 1.9E-05| 8.8E-07| 0.867|8.8E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|056| 1.02016E+00| 2.7E-08| 1.7E-05| 7.7E-07| 0.867|7.7E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|057| 1.02016E+00| 2.5E-08| 1.5E-05| 6.6E-07| 0.867|6.6E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|058| 1.02016E+00| 2.2E-08| 1.3E-05| 5.8E-07| 0.867|5.8E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|059| 1.02016E+00| 2.0E-08| 1.1E-05| 5.0E-07| 0.867|5.0E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.7|060| 1.02016E+00| 1.8E-08| 9.4E-06| 4.3E-07| 0.867|4.3E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|061| 1.02016E+00| 1.6E-08| 8.2E-06| 3.7E-07| 0.867|3.7E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.9|062| 1.02016E+00| 1.5E-08| 7.1E-06| 3.2E-07| 0.867|3.2E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|063| 1.02016E+00| 1.3E-08| 6.1E-06| 2.8E-07| 0.867|2.8E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|064| 1.02016E+00| 1.1E-08| 5.3E-06| 2.4E-07| 0.867|2.4E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|065| 1.02016E+00| 1.0E-08| 4.6E-06| 2.1E-07| 0.867|2.1E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|066| 1.02016E+00| 8.9E-09| 4.0E-06| 1.8E-07| 0.867|1.8E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|067| 1.02016E+00| 7.8E-09| 3.5E-06| 1.6E-07| 0.867|1.6E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.4|068| 1.02016E+00| 6.8E-09| 3.0E-06| 1.4E-07| 0.867|1.4E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.6|069| 1.02016E+00| 6.0E-09| 2.6E-06| 1.2E-07| 0.867|1.2E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    12.9|070| 1.02016E+00| 5.2E-09| 2.3E-06| 1.0E-07| 0.867|1.0E-07                                                                                                                   33|  196|  8    1|  4   19|..........
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+= MOCEX =...|    11.8|071| 1.02016E+00| 4.5E-09| 2.0E-06| 9.0E-08| 0.867|9.0E-08                                                                                                                   33|  196|  8    1|  4   19|..........
+[ MOCEX ]...!!!SUCCESS!!! All convergence criteria satisfied at iteration.......                                                                                                                ........................              71
+[ MOCEX ]...Final eigenvalue....................................................                                                                                                                ........................      1.02015788
+[ MOCEX ]...Final error on the eigenvalue.......................................                                                                                                                ........................      0.00000000
+[ MOCEX ]...Final error on the fission source...................................                                                                                                                ........................      0.00000195
+[ MOCEX ]...Final error on the multi-group flux solution........................                                                                                                                ........................      0.00000009
+[ MOCEX ]...Total number of fission source iterations...........................                                                                                                                ........................              71
+[ MOCEX ]...Total number of multi-group  Krylov subspace iterations.............                                                                                                                ........................      -241617680
+[ MOCEX ]...Total number of multi-group  preconditioner  iterations.............                                                                                                                ........................      -240518169
+  TH_Feedback=           0 F
+  TH_Feedback=           1 F
+  TH_Feedback=           2 F
+  TH_Feedback=           3 F
+  TH_Feedback=           4 F
+  TH_Feedback=           5 F
+  TH_Feedback=           6 F
+  TH_Feedback=           7 F
+  TH_Feedback=           8 F
+  TH_Feedback=           9 F
+  TH_Feedback=          10 F
+  TH_Feedback=          11 F
+  TH_Feedback=          12 F
+  TH_Feedback=          13 F
+  TH_Feedback=          14 F
+  TH_Feedback=          15 F
+[ MOCEX ]...MOCEX_LineSolution_Export is not implemented yet
+[ MOCEX ]...Successfully exported the MOCEX solutions for post-processing.......                                                                                                                ........................................
+[ MOCEX ].......................................................................                                                                                                                ........................................
+[ MOCEX ].Timing history information for total job..............................                                                                                                                ........................................
+[ MOCEX ].Total cumulative program time.........................................                                                                                                                ........................          987.95
+[ MOCEX ].Wall clock time.......................................................                                                                                                                Date (08/07/2018)...Time (09:42:53).....
+[ MOCEX ].Wall clock time.......................................................                                                                                                                Date (08/07/2018)...Time (09:59:21).....
+[ MOCEX ].Total cumulative wall clock time......................................                                                                                                                ........................          988.00
+[ MOCEX ].......................................................................                                                                                                                ....................................................
+[ MOCEX ]........................................Rank 0 snapshot of timing event                                                                                                                s...................................................
+[ MOCEX ].......................................................................                                                                                                                ....................................................
+[ MOCEX ].| Id |Event Name                                                     |                                                                                                                   Measurements    |          Time(seconds)        |
+[ MOCEX ].|    |                                                               |                                                                                                                 Ignore  |  Total  | Avg/Call  |   Total   |Percent|
+[ MOCEX ].|   1|Reading and Trasmitting the Input                              |                                                                                                                     0.00|        2|     0.0191|     0.0382|   0.00|
+[ MOCEX ].|   2|Solver initialization                                          |                                                                                                                     0.00|        1|     0.0014|     0.0014|   0.00|
+[ MOCEX ].|   3|Group-Plane-Angle-Space Segmentation                           |                                                                                                                     0.00|        1|     0.0008|     0.0008|   0.00|
+[ MOCEX ].|   4|Importing and Processing mesh                                  |                                                                                                                     0.00|        1|     0.0859|     0.0859|   0.01|
+[ MOCEX ].|   5|Treatment of the boundary conditions                           |                                                                                                                     0.00|        3|     0.0001|     0.0004|   0.00|
+[ MOCEX ].|   6|Performing a basic bandwidth optimization on the mesh          |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|   7|Obtaining the spatial matrices                                 |                                                                                                                     0.00|        1|     0.0014|     0.0014|   0.00|
+[ MOCEX ].|   8|Generating the cubature mapping                                |                                                                                                                     0.00|        1|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|   9|Set up the ray tracing data                                    |                                                                                                                     0.00|        1|     0.0371|     0.0371|   0.00|
+[ MOCEX ].|  10|Setup of ray tracing elements                                  |                                                                                                                     0.00|        1|     0.0002|     0.0002|   0.00|
+[ MOCEX ].|  11|Back projection                                                |                                                                                                                     0.00|        3|     0.0001|     0.0002|   0.00|
+[ MOCEX ].|  12|Mesh the back projection plane                                 |                                                                                                                     0.00|        2|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  13|Determine trajectory starting points                           |                                                                                                                     0.00|        2|     0.0002|     0.0003|   0.00|
+[ MOCEX ].|  14|Ray casting                                                    |                                                                                                                     0.00|        2|     0.0026|     0.0053|   0.00|
+[ MOCEX ].|  15|Ray tracing                                                    |                                                                                                                     0.00|        1|     0.0052|     0.0052|   0.00|
+[ MOCEX ].|  16|Segmentation of the rays                                       |                                                                                                                     0.00|        1|     0.0053|     0.0053|   0.00|
+[ MOCEX ].|  17|Compute solution vectors dimen                                 |                                                                                                                     0.00|        1|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  18|Determine communication pattern for brokend trajectories       |                                                                                                                     0.00|        1|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  19|Set geometry data                                              |                                                                                                                     0.00|        1|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  20|Obtain and link cross-sections to geometry                     |                                                                                                                     0.00|        1|   141.4951|   141.4951|  14.32|
+[ MOCEX ].|  21|Set up the export data                                         |                                                                                                                     0.00|        1|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  22|Solving the eigenvalue problem                                 |                                                                                                                     0.00|        1|   843.6284|   843.6284|  85.39|
+[ MOCEX ].|  23|Outer iteration                                                |                                                                                                                     0.00|       71|    11.8813|   843.5736|  85.39|
+[ MOCEX ].|  24|Fission source operations                                      |                                                                                                                     0.00|       71|     0.0349|     2.4770|   0.25|
+[ MOCEX ].|  25|Transport Sweeping                                             |                                                                                                                     0.00|    26451|     0.0313|   828.7046|  83.88|
+[ MOCEX ].|  26|Solving the fixed source multigroup problem                    |                                                                                                                     0.00|     3351|     0.2871|   962.2162|  97.39|
+[ MOCEX ].|  27|Multi-group application of A                                   |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  28|Scattering source operation                                    |                                                                                                                     0.00|    23100|     0.0011|    26.4314|   2.68|
+[ MOCEX ].|  29|Within-group application of A                                  |                                                                                                                     0.00|    23100|     0.0346|   798.7235|  80.85|
+[ MOCEX ].|  30|Within-group boundary conditions                               |                                                                                                                     0.00|    23100|     0.0001|     2.8600|   0.29|
+[ MOCEX ].|  31|Within-group segment flux scatter                              |                                                                                                                     0.00|    23100|     0.0002|     5.2799|   0.53|
+[ MOCEX ].|  32|Within-group sweeping operation                                |                                                                                                                     0.00|    23100|     0.0313|   722.7780|  73.16|
+[ MOCEX ].|  33|Importing and Exporting Restart Files                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  34|PC Communication                                               |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  35|PC Scattering Source Operation                                 |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  36|PC Boundary Condition                                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  37|PC Sweeping Operation                                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|   0.00|
+[ MOCEX ].......................................................................                                                                                                                ....................................................
+[ MOCEX ]......................................Parallel performance timing event                                                                                                                s...................................................
+[ MOCEX ].......................................................................                                                                                                                ....................................................
+[ MOCEX ].| Id |Event Name                                                     |                                                                                                                   Measurements    |                   Time(seconds)                       |
+[ MOCEX ].|    |                                                               |                                                                                                                 Max/Min | Avg/Proc| Max/Min   | Avg/Proc  |    Min    |    Max    |Percent|
+[ MOCEX ].|   1|Reading and Trasmitting the Input                              |                                                                                                                     1.00|        2|     1.0447|     0.0389|     0.0382|     0.0399|   0.00|
+[ MOCEX ].|   2|Solver initialization                                          |                                                                                                                     1.00|        1|     1.1314|     0.0013|     0.0013|     0.0014|   0.00|
+[ MOCEX ].|   3|Group-Plane-Angle-Space Segmentation                           |                                                                                                                     1.00|        1|     1.0521|     0.0008|     0.0008|     0.0009|   0.00|
+[ MOCEX ].|   4|Importing and Processing mesh                                  |                                                                                                                     1.00|        1|     1.2294|     0.0786|     0.0707|     0.0869|   0.01|
+[ MOCEX ].|   5|Treatment of the boundary conditions                           |                                                                                                                     1.50|        2|     1.8824|     0.0003|     0.0002|     0.0004|   0.00|
+[ MOCEX ].|   6|Performing a basic bandwidth optimization on the mesh          |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|   7|Obtaining the spatial matrices                                 |                                                                                                                     1.00|        1|     1.7381|     0.0011|     0.0008|     0.0014|   0.00|
+[ MOCEX ].|   8|Generating the cubature mapping                                |                                                                                                                     1.00|        1|     2.0037|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|   9|Set up the ray tracing data                                    |                                                                                                                     1.00|        1|     1.5091|     0.0315|     0.0252|     0.0380|   0.00|
+[ MOCEX ].|  10|Setup of ray tracing elements                                  |                                                                                                                     1.00|        1|     1.8430|     0.0002|     0.0001|     0.0002|   0.00|
+[ MOCEX ].|  11|Back projection                                                |                                                                                                                     1.00|        3|     1.9804|     0.0001|     0.0001|     0.0002|   0.00|
+[ MOCEX ].|  12|Mesh the back projection plane                                 |                                                                                                                     1.00|        2|     2.3325|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  13|Determine trajectory starting points                           |                                                                                                                     1.00|        2|     1.6912|     0.0003|     0.0002|     0.0003|   0.00|
+[ MOCEX ].|  14|Ray casting                                                    |                                                                                                                     1.00|        2|     1.7283|     0.0042|     0.0031|     0.0053|   0.00|
+[ MOCEX ].|  15|Ray tracing                                                    |                                                                                                                     1.00|        1|     1.5934|     0.0043|     0.0033|     0.0053|   0.00|
+[ MOCEX ].|  16|Segmentation of the rays                                       |                                                                                                                     1.00|        1|     1.6537|     0.0045|     0.0034|     0.0057|   0.00|
+[ MOCEX ].|  17|Compute solution vectors dimen                                 |                                                                                                                     1.00|        1|     2.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  18|Determine communication pattern for brokend trajectories       |                                                                                                                     1.00|        1|     1.9970|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  19|Set geometry data                                              |                                                                                                                     1.00|        1|     1.8003|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  20|Obtain and link cross-sections to geometry                     |                                                                                                                     1.00|        1|     1.0004|   141.4750|   141.4500|   141.5123|  14.32|
+[ MOCEX ].|  21|Set up the export data                                         |                                                                                                                     1.00|        1|     0.0000|     0.0265|     0.0000|     0.0438|   0.00|
+[ MOCEX ].|  22|Solving the eigenvalue problem                                 |                                                                                                                     1.00|        1|     1.0000|   843.6304|   843.6172|   843.6379|  85.39|
+[ MOCEX ].|  23|Outer iteration                                                |                                                                                                                     1.00|       71|     1.0000|   843.5764|   843.5624|   843.5813|  85.39|
+[ MOCEX ].|  24|Fission source operations                                      |                                                                                                                     1.00|       71|     1.0022|     2.4764|     2.4725|     2.4779|   0.25|
+[ MOCEX ].|  25|Transport Sweeping                                             |                                                                                                                     1.00|    26451|     1.0263|   831.5826|   824.4078|   846.0623|  85.64|
+[ MOCEX ].|  26|Solving the fixed source multigroup problem                    |                                                                                                                     1.00|     3351|     1.0005|   962.3238|   961.9926|   962.5164|  97.43|
+[ MOCEX ].|  27|Multi-group application of A                                   |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  28|Scattering source operation                                    |                                                                                                                     1.00|    23100|     1.0428|    26.6482|    26.2378|    27.3600|   2.77|
+[ MOCEX ].|  29|Within-group application of A                                  |                                                                                                                     1.00|    23100|     1.0000|   798.7325|   798.7166|   798.7391|  80.85|
+[ MOCEX ].|  30|Within-group boundary conditions                               |                                                                                                                     1.00|    23100|     4.1558|     0.9692|     0.6882|     2.8600|   0.29|
+[ MOCEX ].|  31|Within-group segment flux scatter                              |                                                                                                                     1.00|    23100|     1.0051|     5.2697|     5.2533|     5.2799|   0.53|
+[ MOCEX ].|  32|Within-group sweeping operation                                |                                                                                                                     1.00|    23100|     1.0296|   726.8981|   720.2908|   741.6089|  75.07|
+[ MOCEX ].|  33|Importing and Exporting Restart Files                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  34|PC Communication                                               |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  35|PC Scattering Source Operation                                 |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  36|PC Boundary Condition                                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].|  37|PC Sweeping Operation                                          |                                                                                                                     0.00|        0|     0.0000|     0.0000|     0.0000|     0.0000|   0.00|
+[ MOCEX ].......................................................................                                                                                                                ....................................................

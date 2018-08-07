@@ -1,0 +1,41 @@
+!parallel
+SEGMENT_ANGLE			1
+SEGMENT_PLANE			16
+		
+!convergence value	
+EIGENVALUE_GUESS		1.0
+TOLERANCE_EIGENVALUE	1.0e-0.5
+THERMAL_FLUX			1.0e-0.5
+TOLERANCE_FISSION		1.0e-0.5
+ITERATIONS_FISSION		100
+
+!ANGLES
+SN_TYPE					LEG-TCHEBY
+THETA_RESOLUTION		1
+PHI_RESOLUTION			1
+
+!interactive solver actions
+USE_WGS_KRYLOV			YES
+TOLERANCE_WGS			0.05
+BACKVECTORS_WGS_KRYLOV	50
+
+!mesh and assignment input files
+SOURCEFILE_MESH			control.ascii
+SOURCEFILE_MATERIAL		control.assignment
+
+!cross section input files
+SOURCEFILE_XS			cslib4lwr_36iso41gv2FCF.ascii
+SCATTERING_ORDER		1
+USE_TRANSPORT_XS		NO
+
+!the boundary condition
+BC_ALIAS SIDESET_00000001		reflective
+BC_ALIAS SIDESET_00000002		reflective
+BC_ALIAS SIDESET_00000003		reflective
+BC_ALIAS SIDESET_00000004		reflective
+BC_ALIAS SIDESET_00000005		reflective
+BC_ALIAS SIDESET_00000006		reflective
+BC_ALIAS SIDESET_00000007		reflective
+BC_ALIAS SIDESET_00000008		reflective
+BC_ALIAS		top				void
+BC_ALIAS		bottom			void
