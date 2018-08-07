@@ -1,0 +1,9 @@
+SEGMENT_ANGLE             1
+SEGMENT_PLANE             0
+
+SN_TYPE  					LEG-TCHEBY
+THETA_RESOLUTION			1
+PHI_RESOLUTION				1
+SOURCEFILE_MESH				3x3.ascii
+SOURCEFILE_XS				cslib4lwr_36iso41gv2FCF.ascii
+SOURCEFILE_MATERIAL			material_3x3.assignment
