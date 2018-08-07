@@ -1,0 +1,84 @@
+DEBUG_PRINT_LEVEL         0
+DEBUG_PRINT_SETUP         0
+DEBUG_PRINT_OUTER         0
+DEBUG_PRINT_FORMATION     0
+
+SEGMENT_ANGLE             1
+SEGMENT_PLANE             29
+
+EIGENVALUE_GUESS          1.0
+THERMAL_POWER             535500.0
+RELATIVE_POWER            100.0
+THERMAL_POWER_DENSITY     347.19
+
+TOLERANCE_EIGENVALUE      1.0e-05
+TOLERANCE_FLUX            1.0e-05
+TOLERANCE_FISSION         1.0e-05
+ITERATIONS_FISSION        100
+USE_TCHEBYCHEV_ACCEL      NO
+
+SN_TYPE                   LEG-TCHEBY
+THETA_RESOLUTION          1 !7
+PHI_RESOLUTION            1 !15
+
+
+SOURCEFILE_MESH           3x3.ascii
+
+
+! KRYLOV options
+! -----------------------------------------
+USE_WGS_KRYLOV            YES
+TOLERANCE_WGS             0.05
+ITERATIONS_WGS_KRYLOV     150
+BACKVECTORS_WGS_KRYLOV    50
+
+
+! Materal Assignment Files
+! -----------------------------------------
+SOURCEFILE_MATERIAL       material_full_nogrids_HFP.assignment
+RELAX_SPATIAL             NO
+BASIC_BWO                 NO
+
+
+! Cross section controls
+! -----------------------------------------
+SOURCEFILE_XS             cslib4lwr_36iso41gv2FCF.ascii
+SCATTERING_ORDER          2
+USE_TRANSPORT_XS          NO
+USE_XSAPI                 RESONANCETABLE
+
+
+! The boundary condition aliases
+! -----------------------------------------
+BC_ALIAS SIDESET_00000001          reflective
+BC_ALIAS SIDESET_00000002          reflective
+BC_ALIAS SIDESET_00000003          reflective
+BC_ALIAS SIDESET_00000004          reflective
+BC_ALIAS SIDESET_00000005          reflective
+BC_ALIAS SIDESET_00000006          reflective
+BC_ALIAS SIDESET_00000007          reflective
+BC_ALIAS SIDESET_00000008          reflective
+BC_ALIAS                 top              void
+BC_ALIAS                 bottom           void
+
+
+! Output Controls
+! -----------------------------------------
+EXPORT_MESH_VTK           NO
+EXPORT_CUBATURE           NO
+EXPORT_XS_PRINT           NO
+EXPORT_MESH               NO
+EXPORT_PARALLEL_SPACE     NO
+
+EXPORT_FILE bench.h5
+EXPORT_FLUX YES
+EXPORT_EDITS             edits.out
+
+
+! MOCFE Controls
+! -----------------------------------------
+METHOD                    MOCFE
+EQUAL_AREA_SPACING        YES
+TRAJECTORY_AREA           0.05
+BACK_PROJECTION           DOMAIN
+USE_MGS_KRYLOV            NO
